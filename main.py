@@ -5,7 +5,9 @@ sc = spellchecker.SpellChecker()
 while(True):
     sc.printMenu()
 
-    txtIn = input()
+    txtIn = input("Scegli: ")
+    while txtIn.isdigit() != True or int(txtIn) >=5 or int(txtIn) <=0 :
+        txtIn = input("Scegli: ")
     # Add input control here!
 
     if int(txtIn) == 1:
@@ -23,10 +25,9 @@ while(True):
     if int(txtIn) == 3:
         print("Inserisci la tua frase in Spagnolo\n")
         txtIn = input()
-        sc.handleSentence(txtIn,"spanish")
+        sc.handleSentence(txtIn,"Spanish")
         continue
 
     if int(txtIn) == 4:
         break
-
 

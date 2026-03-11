@@ -5,7 +5,7 @@ import richWord as rw
 class MultiDictionary:
 
     def __init__(self):
-       pass
+      self.dizionari = {}
 
     def printDic(self, language):
         pass
